@@ -1,0 +1,207 @@
+================================================================================
+LIVRABLE 4 — DÉFINITION DES UNITÉS & RÈGLES (Les bases qui évitent les débats)
+================================================================================
+But : Rendre ton estimation "mesurable" et défendable
+Statut : □ EN COURS  □ VALIDÉ
+
+================================================================================
+
+UNITÉ D'EFFORT : HOMME-JOUR (H/J)
+================================================================================
+
+Définition :
+------------
+1 Homme-Jour (H/J) = 
+
+
+
+Hypothèses de base :
+--------------------
+• Nombre d'heures par jour de travail effectif : _____ h
+• Jours ouvrables par semaine : _____
+• Semaines de travail par mois : _____
+
+Donc :
+• 1 H/J = _____ heures
+• 1 semaine = _____ H/J
+• 1 mois = _____ H/J
+
+
+Exclusions (ce qui n'est PAS compté dans l'effort) :
+----------------------------------------------------
+✗ 
+✗ 
+✗ 
+
+
+================================================================================
+
+UNITÉ DE DURÉE : SEMAINE CALENDRIER
+================================================================================
+
+Définition :
+------------
+1 Semaine calendrier = 7 jours, incluant week-ends et jours fériés
+
+
+Jours fériés spécifiques Kinshasa à considérer :
+------------------------------------------------
+[Liste des jours fériés qui impactent les projets]
+• 
+• 
+• 
+• 
+
+→ Total approximatif : _____ jours fériés/an
+→ Impact sur planning : ajouter ~_____ semaines par projet de 6 mois
+
+
+================================================================================
+
+CAPACITÉ RÉELLE DE L'ÉQUIPE
+================================================================================
+
+Formule de base :
+-----------------
+Capacité réelle = Nb personnes × Disponibilité × Focus
+
+
+FACTEUR 1 : DISPONIBILITÉ
+--------------------------
+Définition : % du temps où la personne est affectée au projet
+             (vs autres projets/tâches administratives)
+
+Échelle proposée :
+□ Haute (0.9) : personne dédiée à 90%+ au projet
+□ Moyenne (0.6) : personne partagée entre 2-3 projets
+□ Faible (0.3) : personne disponible ponctuellement
+
+Valeur par défaut pour Kinshasa : _____ 
+Justification : 
+
+
+
+
+FACTEUR 2 : FOCUS (Productivité réelle)
+----------------------------------------
+Définition : % du temps "disponible" réellement productif
+             (vs réunions, interruptions, problèmes techniques)
+
+Échelle proposée :
+□ Élevé (0.8) : environnement stable, peu d'interruptions
+□ Moyen (0.6) : interruptions régulières, réunions normales
+□ Faible (0.4) : nombreuses interruptions, instabilité
+
+Valeur par défaut pour Kinshasa : _____ 
+Justification : 
+
+
+
+
+CALCUL EXEMPLE :
+----------------
+Équipe de 3 personnes sur un projet de 30 H/J
+
+Hypothèse 1 (optimiste) :
+• Disponibilité : 0.9
+• Focus : 0.8
+• Capacité réelle = 3 × 0.9 × 0.8 = 2.16 H/J par jour
+• Durée = 30 H/J ÷ 2.16 = ~14 jours = 2.8 semaines
+
+Hypothèse 2 (réaliste Kinshasa) :
+• Disponibilité : _____
+• Focus : _____
+• Capacité réelle = 3 × _____ × _____ = _____ H/J par jour
+• Durée = 30 H/J ÷ _____ = ~_____ jours = _____ semaines
+
+
+================================================================================
+
+RÈGLES DE CONVERSION
+================================================================================
+
+Effort → Durée (avec équipe) :
+------------------------------
+Durée (semaines) = Effort (H/J) / (Capacité_réelle × 5 jours/semaine)
+                 + Overhead_coordination
+
+
+Overhead de coordination :
+--------------------------
+[Temps additionnel pour synchronisation, réunions, validation]
+
+Si équipe = 1 personne : overhead = 0%
+Si équipe = 2-3 personnes : overhead = _____% 
+Si équipe = 4-5 personnes : overhead = _____% 
+Si équipe > 5 personnes : overhead = _____% 
+
+
+================================================================================
+
+RÈGLES MÉTIER SPÉCIFIQUES KINSHASA
+================================================================================
+
+Règle 1 : ___________________________
+-------------------------------------
+[Ex. "Ajouter 1 semaine par phase nécessitant validation administrative"]
+
+Quand : 
+Impact : 
+Justification : 
+
+
+
+Règle 2 : ___________________________
+-------------------------------------
+Quand : 
+Impact : 
+Justification : 
+
+
+
+Règle 3 : ___________________________
+-------------------------------------
+Quand : 
+Impact : 
+Justification : 
+
+
+
+================================================================================
+
+EXEMPLE COMPLET DE CALCUL
+================================================================================
+
+Projet : [Nom]
+Type : 
+Effort estimé brut : _____ H/J
+
+Équipe :
+• Nombre : _____
+• Disponibilité : _____
+• Focus : _____
+• Capacité réelle = _____ H/J/jour
+
+Calcul durée :
+• Sans overhead : _____ semaines
+• Overhead (+_____%) : _____ semaines
+• DURÉE TOTALE : _____ semaines
+
+
+================================================================================
+
+VALIDATION :
+-----------
+□ Unités clairement définies (H/J, semaines)
+□ Facteurs Disponibilité et Focus calibrés pour Kinshasa
+□ Formules de calcul validées avec exemples
+□ Règles métier spécifiques documentées
+□ Je peux passer au Livrable 5
+
+Date de validation : __________
+Signature/Initiales : __________
+
+
+================================================================================
+NOTES / QUESTIONS À RÉSOUDRE :
+================================================================================

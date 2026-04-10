@@ -1,0 +1,432 @@
+================================================================================
+LIVRABLE 10 — PLAN D'ÉVALUATION (Preuve)
+================================================================================
+But : "Défendre à l'examen" = prouver que ton modèle fonctionne.
+Statut : □ EN COURS  □ VALIDÉ
+
+RÈGLE : Sans ça, on te dira "c'est subjectif".
+
+================================================================================
+
+OBJECTIFS DE L'ÉVALUATION
+================================================================================
+
+1. Valider la PRÉCISION du modèle d'estimation
+2. Mesurer l'UTILITÉ pour les utilisateurs
+3. Identifier les LIMITES et axes d'amélioration
+4. Prouver la SUPÉRIORITÉ vs estimation intuitive
+
+
+================================================================================
+
+MÉTRIQUES DE PRÉCISION
+================================================================================
+
+MÉTRIQUE 1 : Erreur d'Effort
+-----------------------------
+
+Formule :
+Erreur_Effort(%) = |Effort_Estimé - Effort_Réel| / Effort_Réel × 100
+
+Pour chaque cas de test :
+• Calculer erreur individuelle
+• Agréger : erreur médiane, erreur moyenne, écart-type
+
+Objectifs :
+□ Erreur médiane ≤ _____% 
+□ Erreur moyenne ≤ _____% 
+□ 75% des cas avec erreur < _____% 
+
+Référence acceptable (littérature) :
+• Excellent : < 25%
+• Bon : 25-40%
+• Acceptable : 40-60%
+• Faible : > 60%
+
+
+---
+
+MÉTRIQUE 2 : Erreur de Durée
+-----------------------------
+
+Formule :
+Erreur_Durée(%) = |Durée_Estimée - Durée_Réelle| / Durée_Réelle × 100
+
+Objectifs :
+□ Erreur médiane ≤ _____% 
+□ Erreur moyenne ≤ _____% 
+
+
+---
+
+MÉTRIQUE 3 : Couverture de l'Intervalle
+----------------------------------------
+
+Formule :
+Couverture(%) = Nb_Cas_Dans_Intervalle / Nb_Cas_Total × 100
+
+Un cas est "dans l'intervalle" si :
+Effort_Réel ∈ [Effort_Bas, Effort_Haut]
+
+Objectifs :
+□ Couverture ≥ 70%
+□ Idéal : 80-85%
+
+Si < 70% → intervalle trop étroit (sous-estimation de l'incertitude)
+Si > 95% → intervalle trop large (peu utile)
+
+
+---
+
+MÉTRIQUE 4 : Distribution des Erreurs
+--------------------------------------
+
+Analyser si les erreurs sont :
+• Symétriques (autant de sur-estimations que de sous-estimations)
+• Biaisées (tendance à sur/sous-estimer systématiquement)
+
+Biais = Moyenne(Effort_Estimé - Effort_Réel)
+
+Objectif :
+□ |Biais| < 10% (erreurs compensées)
+
+
+================================================================================
+
+MÉTRIQUES D'UTILITÉ
+================================================================================
+
+MÉTRIQUE 5 : Satisfaction Utilisateur
+--------------------------------------
+
+Questionnaire simple (échelle 1-5) :
+
+1. L'estimation est-elle crédible ?
+   1 = Pas du tout ... 5 = Totalement
+   
+2. L'estimation vous aide-t-elle à décider ?
+   1 = Pas du tout ... 5 = Énormément
+   
+3. Les explications sont-elles claires ?
+   1 = Confuses ... 5 = Très claires
+   
+4. Utiliseriez-vous cet outil régulièrement ?
+   1 = Jamais ... 5 = Systématiquement
+   
+5. Note globale de l'outil ?
+   1 = Inutile ... 5 = Indispensable
+
+Score moyen visé : ≥ 3.5/5
+
+Nombre d'utilisateurs testeurs : _____ (minimum 5-10)
+
+
+---
+
+MÉTRIQUE 6 : Amélioration vs Intuition
+---------------------------------------
+
+Comparer :
+• Estimation de l'outil
+• Estimation intuitive (expert humain sans outil)
+
+Sur même ensemble de cas.
+
+Objectif :
+□ Erreur de l'outil < Erreur humaine (au moins pour 70% des cas)
+
+
+================================================================================
+
+PROTOCOLE D'ÉVALUATION
+================================================================================
+
+PHASE 1 : Calibration
+----------------------
+
+Dataset : Utiliser _____ cas du Truth Dataset (Livrable 7)
+
+Méthode :
+1. Ajuster les paramètres du modèle (a, b, multiplicateurs)
+2. Minimiser l'erreur sur cet ensemble
+3. Documenter les paramètres finaux
+
+Résultat :
+• Modèle calibré v1.0
+• Paramètres optimisés documentés
+
+
+---
+
+PHASE 2 : Test (Validation)
+----------------------------
+
+Dataset : Réserver _____ cas NON utilisés pour calibration
+
+Méthode :
+1. Appliquer le modèle calibré (sans modification)
+2. Comparer estimations vs réalité
+3. Calculer métriques 1-4
+
+Si dataset < 20 cas total :
+→ Utiliser validation croisée (leave-one-out)
+   = calibrer sur N-1 cas, tester sur le Nème, répéter
+
+
+Résultats attendus :
+┌─────────────────────────┬──────────┬────────────┐
+│ Métrique                │ Valeur   │ Objectif   │
+├─────────────────────────┼──────────┼────────────┤
+│ Erreur médiane effort   │ ____%    │ ≤ ____%    │
+│ Erreur médiane durée    │ ____%    │ ≤ ____%    │
+│ Couverture intervalle   │ ____%    │ ≥ 70%      │
+│ Biais                   │ ____%    │ < 10%      │
+└─────────────────────────┴──────────┴────────────┘
+
+
+---
+
+PHASE 3 : Test Utilisateur
+---------------------------
+
+Participants : _____ utilisateurs cibles
+(chefs de projet, responsables administratifs...)
+
+Protocole :
+1. Présenter l'outil (5 min)
+2. Demander d'estimer 2-3 projets qu'ils connaissent
+3. Comparer avec leur propre estimation intuitive
+4. Questionnaire de satisfaction (métrique 5)
+5. Interview feedback qualitatif (15 min)
+
+Questions ouvertes :
+• Qu'avez-vous trouvé utile ?
+• Qu'est-ce qui manque ?
+• Utiliseriez-vous cet outil ? Pourquoi ?
+• Suggestions d'amélioration ?
+
+
+Résultats attendus :
+• Score satisfaction moyen : ___/5
+• Feedback qualitatif consolidé
+• Liste des améliorations prioritaires
+
+
+================================================================================
+
+ANALYSE DES RÉSULTATS
+================================================================================
+
+ANALYSE PAR TYPE DE PROJET
+---------------------------
+
+Erreur par type :
+┌─────────┬────────────┬────────────┬─────────────┐
+│ Type    │ Nb cas     │ Err. méd.  │ Couverture  │
+├─────────┼────────────┼────────────┼─────────────┤
+│ 1.1     │            │            │             │
+│ 1.2     │            │            │             │
+│ 1.3     │            │            │             │
+│ 2.1     │            │            │             │
+│ 2.2     │            │            │             │
+│ 2.3     │            │            │             │
+└─────────┴────────────┴────────────┴─────────────┘
+
+→ Identifier types bien/mal estimés
+
+
+---
+
+ANALYSE PAR FACTEUR
+--------------------
+
+Impact réel des facteurs Kinshasa :
+
+Facteur Électricité :
+• Corrélation avec erreur : _____
+• Influence confirmée ? □ Oui  □ Non
+
+Facteur Internet :
+• Corrélation avec erreur : _____
+• Influence confirmée ? □ Oui  □ Non
+
+[...]
+
+→ Valider ou ajuster les multiplicateurs
+
+
+---
+
+ANALYSE DES CAS EXTRÊMES
+-------------------------
+
+Cas avec erreur > 50% :
+
+Cas #___ :
+• Pourquoi l'erreur est élevée ?
+• Facteur manquant dans le modèle ?
+• Données d'entrée incorrectes ?
+• Cas atypique (à exclure) ?
+
+Action corrective :
+□ Ajouter un facteur
+□ Ajuster multiplicateur
+□ Améliorer formulaire
+□ Documenter comme limitation
+
+
+================================================================================
+
+LIMITES IDENTIFIÉES
+================================================================================
+
+[Être honnête - crucial pour la défense]
+
+Limite 1 : Taille du dataset
+------------------------------
+Nombre de cas : _____ (< 30 cas)
+Impact : Précision limitée, intervalles larges
+Mitigation : Collecter plus de cas au fil du temps
+
+
+Limite 2 : ___________________________
+------------------------------
+Description : 
+Impact : 
+Mitigation : 
+
+
+Limite 3 : ___________________________
+------------------------------
+Description : 
+Impact : 
+Mitigation : 
+
+
+================================================================================
+
+COMPARAISON AVEC L'ÉTAT DE L'ART
+================================================================================
+
+Modèles de référence (littérature) :
+------------------------------------
+
+COCOMO (Constructive Cost Model) :
+• Erreur typique : 20-30%
+• Notre modèle : _____% 
+• Commentaire : 
+
+Function Points :
+• Erreur typique : 25-40%
+• Notre modèle : _____% 
+• Commentaire : 
+
+Comparaison :
+□ Notre modèle est comparable
+□ Notre modèle est meilleur (grâce aux facteurs Kinshasa)
+□ Notre modèle est moins précis (mais plus simple/rapide)
+
+
+================================================================================
+
+PLAN D'AMÉLIORATION CONTINUE
+================================================================================
+
+Version actuelle : v1.0
+
+Améliorations futures (v1.1, v1.2...) :
+
+Court terme (3-6 mois) :
+------------------------
+• Collecter _____ cas supplémentaires
+• Affiner multiplicateur _____
+• Ajouter facteur _____
+• Améliorer formulaire (champ _____)
+
+
+Moyen terme (6-12 mois) :
+-------------------------
+• Étendre à d'autres types de projets
+• Implémenter apprentissage automatique (si >50 cas)
+• Intégration avec outils de gestion de projet
+• Dashboard de suivi post-projet
+
+
+Long terme (1-2 ans) :
+----------------------
+• Base de données d'estimations historiques
+• Benchmarking inter-institutions
+• Modèle prédictif avancé
+
+
+================================================================================
+
+DOCUMENTATION POUR LA DÉFENSE
+================================================================================
+
+Documents à préparer :
+----------------------
+
+□ Rapport d'évaluation (10-15 pages)
+  - Protocole
+  - Résultats métriques
+  - Analyse
+  - Limites
+  - Conclusions
+
+□ Slides de présentation (15-20 slides)
+  - Contexte et problème
+  - Modèle proposé
+  - Résultats d'évaluation
+  - Comparaison état de l'art
+  - Contributions et limites
+
+□ Annexes
+  - Dataset complet
+  - Calculs détaillés pour exemples
+  - Questionnaires utilisateurs
+  - Feedback brut
+
+
+Questions anticipées (et réponses) :
+------------------------------------
+
+Q1 : "Pourquoi seulement _____ cas de test ?"
+R1 : 
+
+
+Q2 : "Votre erreur de _____% est élevée, non ?"
+R2 : 
+
+
+Q3 : "Comment garantissez-vous que ça marche dans tous les contextes ?"
+R3 : 
+
+
+Q4 : "Pourquoi pas utiliser l'IA/ML ?"
+R4 : 
+
+
+Q5 : "Quelle est la valeur ajoutée vs Excel simple ?"
+R5 : 
+
+
+================================================================================
+
+VALIDATION :
+-----------
+□ Métriques de précision définies (erreur, couverture)
+□ Métriques d'utilité définies (satisfaction)
+□ Protocole d'évaluation complet (calibration, test, utilisateurs)
+□ Plan d'analyse des résultats
+□ Limites identifiées et assumées
+□ Documentation de défense prête
+□ Je peux maintenant CODER (architecture + BDD + implémentation)
+
+Date de validation : __________
+Signature/Initiales : __________
+
+
+================================================================================
+NOTES / QUESTIONS À RÉSOUDRE :
+================================================================================

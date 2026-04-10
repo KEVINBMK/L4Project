@@ -1,0 +1,379 @@
+================================================================================
+LIVRABLE 8 — MODÈLE D'ESTIMATION v0 (Papier, explicable)
+================================================================================
+But : Ton moteur doit être compréhensible et défendable.
+Statut : □ EN COURS  □ VALIDÉ
+
+RÈGLE : Tu dois pouvoir expliquer chaque calcul.
+
+================================================================================
+
+PRINCIPE GÉNÉRAL
+================================================================================
+
+Formule de base :
+
+Effort_Final = Effort_Base × M_Complexité × M_Équipe × M_Kinshasa
+
+Durée = Effort_Final / Capacité_Réelle + Overhead_Coordination
+
+Intervalle = [Bas, Probable, Haut] avec incertitude u
+
+
+================================================================================
+
+ÉTAPE 1 : EFFORT DE BASE (fonction de taille et type)
+================================================================================
+
+Approche paramétrique simple :
+
+Effort_Base = a + b × Taille_Normalisée
+
+Où :
+• a = effort minimal (setup, cadrage, déploiement incompressible)
+• b = coefficient de productivité (effort par unité de taille)
+• Taille_Normalisée = métrique principale du type de projet
+
+
+Calibration par type (à partir du dataset - Livrable 7) :
+----------------------------------------------------------
+
+TYPE 1.1 : [Nom]
+----------------
+Métrique principale : 
+Formule : Effort_Base = _____ + _____ × [métrique]
+
+Basé sur : _____ cas du dataset
+Exemple : Si [métrique] = 10 → Effort_Base = _____ H/J
+
+
+TYPE 1.2 : [Nom]
+----------------
+Métrique principale : 
+Formule : Effort_Base = _____ + _____ × [métrique]
+
+Basé sur : _____ cas du dataset
+Exemple : Si [métrique] = 15 → Effort_Base = _____ H/J
+
+
+TYPE 1.3 : [Nom]
+----------------
+Métrique principale : 
+Formule : Effort_Base = _____ + _____ × [métrique]
+
+Basé sur : _____ cas
+Exemple : 
+
+
+TYPE 2.1 : [Nom]
+----------------
+Métrique principale : 
+Formule : Effort_Base = _____ + _____ × [métrique]
+
+Basé sur : _____ cas
+Exemple : 
+
+
+TYPE 2.2 : [Nom]
+----------------
+Métrique principale : 
+Formule : Effort_Base = _____ + _____ × [métrique]
+
+Basé sur : _____ cas
+Exemple : 
+
+
+TYPE 2.3 : [Nom]
+----------------
+Métrique principale : 
+Formule : Effort_Base = _____ + _____ × [métrique]
+
+Basé sur : _____ cas
+Exemple : 
+
+
+================================================================================
+
+ÉTAPE 2 : MULTIPLICATEURS
+================================================================================
+
+M_COMPLEXITÉ
+------------
+
+Formule : M_Complexité = f(règles_métier, sécurité, offline, multi_sites)
+
+Table de calcul :
+
+Règles métier :
+• Niveau 1-2 → facteur 1.0
+• Niveau 3 → facteur 1.2
+• Niveau 4 → facteur 1.4
+• Niveau 5 → facteur 1.7
+
+Sécurité :
+• Basique → facteur 1.0
+• Moyenne → facteur 1.15
+• Élevée → facteur 1.3
+
+Offline :
+• Non → facteur 1.0
+• Oui → facteur 1.4
+
+Multi-sites (nb > 1) :
+• 2 sites → facteur 1.1
+• 3-4 sites → facteur 1.25
+• 5+ sites → facteur 1.5
+
+Combinaison : M_Complexité = (règles) × (sécurité) × (offline) × (multi-sites)
+
+Exemple :
+Règles=3, Sécurité=Moyenne, Offline=Oui, Sites=2
+→ M_Complexité = 1.2 × 1.15 × 1.4 × 1.1 = _____
+
+
+---
+
+M_ÉQUIPE
+--------
+
+Formule : M_Équipe = f(expérience, disponibilité, turnover)
+
+Table de calcul :
+
+Expérience (inversement proportionnel) :
+• Niveau 1 (Senior) → facteur 0.8
+• Niveau 2 → facteur 0.9
+• Niveau 3 → facteur 1.0
+• Niveau 4 → facteur 1.3
+• Niveau 5 (Junior) → facteur 1.8
+
+Turnover/Absences :
+• Faible → facteur 1.0
+• Moyen → facteur 1.15
+• Élevé → facteur 1.4
+
+Combinaison : M_Équipe = (expérience) × (turnover)
+
+Exemple :
+Expérience=4, Turnover=Moyen
+→ M_Équipe = 1.3 × 1.15 = _____
+
+
+---
+
+M_KINSHASA
+----------
+
+Formule : M_Kinshasa = f(électricité, internet, validation, autres)
+
+Table de calcul (basée sur Livrable 5) :
+
+Électricité :
+• Niveau 1 → facteur 1.0
+• Niveau 2 → facteur 1.1
+• Niveau 3 → facteur 1.25
+• Niveau 4 → facteur 1.45
+• Niveau 5 → facteur 1.8
+
+Internet :
+• Niveau 1 → facteur 1.0
+• Niveau 2 → facteur 1.05
+• Niveau 3 → facteur 1.15
+• Niveau 4 → facteur 1.3
+• Niveau 5 → facteur 1.6
+
+Validation administrative :
+• Niveau 1 → facteur 1.0
+• Niveau 2 → facteur 1.05
+• Niveau 3 → facteur 1.15
+• Niveau 4 → facteur 1.3
+• Niveau 5 → facteur 1.5
+
+[Ajouter autres facteurs critiques]
+
+Combinaison : M_Kinshasa = (électricité) × (internet) × (validation) × ...
+
+OU approche additive : M_Kinshasa = 1 + Σ(pénalités)
+
+Exemple :
+Électricité=4, Internet=3, Validation=4
+→ M_Kinshasa = 1.45 × 1.15 × 1.3 = _____
+
+
+================================================================================
+
+ÉTAPE 3 : CALCUL DE LA DURÉE
+================================================================================
+
+Capacité_Réelle = Nb_Personnes × Disponibilité × Focus
+[Référence : Livrable 4]
+
+Disponibilité par défaut : _____ (selon entrée utilisateur)
+Focus par défaut : _____ (contexte Kinshasa)
+
+Durée_Base (semaines) = Effort_Final / (Capacité_Réelle × 5 jours/semaine)
+
+
+Overhead de coordination :
+--------------------------
+• 1 personne : 0%
+• 2-3 personnes : +_____% 
+• 4-5 personnes : +_____% 
+• 6+ personnes : +_____% 
+
+Durée_Finale = Durée_Base × (1 + Overhead)
+
+
+================================================================================
+
+ÉTAPE 4 : INTERVALLE D'INCERTITUDE
+================================================================================
+
+Principe : Fournir [Bas, Probable, Haut]
+
+Bas = Effort_Final × (1 - u)
+Probable = Effort_Final
+Haut = Effort_Final × (1 + u)
+
+Facteur d'incertitude u :
+-------------------------
+
+u_base = 0.25 (par défaut, ±25%)
+
+Ajustements :
+• Si données d'entrée floues → +0.1
+• Si type de projet rare (< 3 cas dataset) → +0.15
+• Si nombreux facteurs Kinshasa élevés (≥3 facteurs niveau 4-5) → +0.2
+• Si équipe très junior (niveau 4-5) → +0.15
+
+u_final = u_base + ajustements
+u_final = min(u_final, 0.8)  [plafond à 80%]
+
+
+Exemple :
+Effort_Final = 50 H/J
+u = 0.25 + 0.1 (données floues) + 0.2 (Kinshasa difficile) = 0.55
+
+Bas = 50 × (1 - 0.55) = 22.5 H/J
+Probable = 50 H/J
+Haut = 50 × (1 + 0.55) = 77.5 H/J
+
+
+================================================================================
+
+EXEMPLE COMPLET DE CALCUL
+================================================================================
+
+PROJET : [Nom du projet exemple]
+---------------------------------
+
+Inputs :
+--------
+Type : 
+Taille : [métrique] = 
+Complexité :
+  • Règles métier : ___
+  • Sécurité : ___
+  • Offline : ___
+  • Multi-sites : ___
+Équipe :
+  • Nb personnes : ___
+  • Expérience : ___
+  • Disponibilité : ___
+  • Turnover : ___
+Kinshasa :
+  • Électricité : ___
+  • Internet : ___
+  • Validation : ___
+
+Calculs :
+---------
+
+1. Effort_Base = _____ + _____ × _____ = _____ H/J
+
+2. M_Complexité = _____ × _____ × _____ × _____ = _____
+
+3. M_Équipe = _____ × _____ = _____
+
+4. M_Kinshasa = _____ × _____ × _____ = _____
+
+5. Effort_Final = _____ × _____ × _____ × _____ = _____ H/J
+
+6. Capacité_Réelle = _____ × _____ × _____ = _____ H/J/jour
+
+7. Durée_Base = _____ / (_____ × 5) = _____ semaines
+
+8. Overhead = _____% → Durée_Finale = _____ × _____ = _____ semaines
+
+9. Incertitude u = _____ 
+   → Bas = _____ H/J | Probable = _____ H/J | Haut = _____ H/J
+
+Résultat :
+----------
+Effort : _____ H/J [_____ – _____]
+Durée : _____ semaines [_____ – _____]
+
+Explication :
+"L'effort estimé est de _____ H/J (entre _____ et _____) car :
+ - [Facteur 1] : impact _____ 
+ - [Facteur 2] : impact _____
+ - [Facteur 3] : impact _____
+La durée avec une équipe de _____ personnes sera d'environ _____ semaines."
+
+
+================================================================================
+
+VALIDATION DU MODÈLE (avec dataset)
+================================================================================
+
+Tester sur les cas du Livrable 7 :
+
+Cas #1 : 
+• Estimé : _____ H/J
+• Réel : _____ H/J
+• Erreur : _____% 
+• Dans intervalle ? □ Oui  □ Non
+
+Cas #2 : 
+• Estimé : _____ H/J
+• Réel : _____ H/J
+• Erreur : _____% 
+• Dans intervalle ? □ Oui  □ Non
+
+[...]
+
+Métriques globales :
+--------------------
+Erreur médiane : _____% 
+Erreur moyenne : _____%
+% dans intervalle [bas, haut] : _____% 
+
+→ Objectif : erreur médiane < 30%, intervalle > 70%
+
+
+Ajustements nécessaires :
+-------------------------
+□ Revoir coefficients Effort_Base
+□ Ajuster multiplicateurs
+□ Augmenter incertitude u
+□ Autre : 
+
+
+================================================================================
+
+VALIDATION :
+-----------
+□ Formules définies et calibrées
+□ Multiplicateurs justifiés
+□ Exemple complet calculé
+□ Testé sur dataset (erreur acceptable)
+□ Explicabilité garantie
+□ Je peux passer au Livrable 9
+
+Date de validation : __________
+Signature/Initiales : __________
+
+
+================================================================================
+NOTES / QUESTIONS À RÉSOUDRE :
+================================================================================

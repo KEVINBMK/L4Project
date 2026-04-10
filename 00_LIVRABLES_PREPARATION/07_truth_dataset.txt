@@ -1,0 +1,237 @@
+================================================================================
+LIVRABLE 7 — "TRUTH DATASET" MINIMAL (10 à 30 cas)
+================================================================================
+But : Calibrer + évaluer. Sans données, ton modèle est contestable.
+Statut : □ EN COURS  □ VALIDÉ
+
+RÈGLE SENIOR : Mieux vaut 15 cas "propres" que 100 flous.
+
+================================================================================
+
+STRUCTURE DU DATASET
+================================================================================
+
+Colonnes obligatoires :
+-----------------------
+1. ID_Projet
+2. Type_Projet (selon taxonomie Livrable 3)
+3. [Métriques de taille - selon type]
+4. [Facteurs de complexité]
+5. [Facteurs équipe]
+6. [Facteurs Kinshasa]
+7. Effort_Réel_HJ (homme-jours)
+8. Durée_Réelle_Semaines
+9. Nb_Personnes
+10. Causes_Dérive (texte court)
+11. Notes
+
+
+Format recommandé :
+-------------------
+□ Excel / Google Sheets
+□ CSV
+□ JSON
+
+
+================================================================================
+
+SOURCES DE DONNÉES POSSIBLES
+================================================================================
+
+Sources à explorer :
+--------------------
+□ Projets étudiants (TFE, projets de cours)
+□ Projets freelances personnels ou connus
+□ Mini-projets d'administration (stages, consultations)
+□ Projets d'associations locales
+□ Projets internes (université, département)
+□ Projets open-source locaux
+□ Documentation de projets publics
+
+Contacts/ressources :
+---------------------
+• 
+• 
+• 
+
+
+================================================================================
+
+COLLECTE DE DONNÉES
+================================================================================
+
+CAS #1
+------
+ID_Projet : 001
+Nom : 
+Type_Projet : 
+Famille : 
+
+Taille :
+• [Métrique 1] : 
+• [Métrique 2] : 
+• [Métrique 3] : 
+
+Complexité :
+• Règles métier : ___ / 5
+• Sécurité : 
+• Offline : Oui/Non
+• Multi-sites : ___
+
+Équipe :
+• Nb personnes : 
+• Expérience : ___ / 5
+• Disponibilité : 
+
+Facteurs Kinshasa :
+• Électricité : ___ / 5
+• Internet : ___ / 5
+• Validation : ___ / 5
+• [Autre] : ___ / 5
+
+RÉSULTATS RÉELS :
+• Effort_Réel : _____ H/J
+• Durée_Réelle : _____ semaines
+• Causes_Dérive : 
+
+Notes : 
+
+---
+
+CAS #2
+------
+[Même structure]
+
+
+---
+
+CAS #3
+------
+[...]
+
+
+================================================================================
+
+TEMPLATE EXCEL/CSV
+================================================================================
+
+ID | Type | Nom | [Métriques taille] | [Complexité] | [Équipe] | [Kinshasa] | Effort_HJ | Durée_Sem | Dérive | Notes
+---|------|-----|-------------------|--------------|----------|-----------|----------|----------|--------|-------
+001|      |     |                   |              |          |           |          |          |        |
+002|      |     |                   |              |          |           |          |          |        |
+003|      |     |                   |              |          |           |          |          |        |
+...|      |     |                   |              |          |           |          |          |        |
+
+
+[Créer le fichier Excel séparément avec toutes les colonnes]
+
+
+================================================================================
+
+ANALYSE DE QUALITÉ DES DONNÉES
+================================================================================
+
+Objectif : Au moins 10-30 cas
+
+Nombre de cas collectés : _____ / 30
+
+Répartition par type :
+----------------------
+Type 1.1 : _____ cas
+Type 1.2 : _____ cas
+Type 1.3 : _____ cas
+Type 2.1 : _____ cas
+Type 2.2 : _____ cas
+Type 2.3 : _____ cas
+
+Couverture : □ Bonne  □ Déséquilibrée
+
+
+Complétude des données :
+------------------------
+Cas avec TOUTES les informations : _____ (___%)
+Cas avec données partielles : _____ (___%)
+Cas à exclure (trop incomplets) : _____
+
+
+Qualité des données "effort réel" :
+-----------------------------------
+□ Effort mesuré précisément
+□ Effort estimé approximativement (± 20%)
+□ Effort reconstruit (souvenirs)
+
+→ Fiabilité globale : _____/5
+
+
+================================================================================
+
+PATTERNS IDENTIFIÉS (Analyse préliminaire)
+================================================================================
+
+Effort moyen par type :
+-----------------------
+Type 1.1 : _____ H/J (min: ___ , max: ___ )
+Type 1.2 : _____ H/J (min: ___ , max: ___ )
+Type 1.3 : _____ H/J (min: ___ , max: ___ )
+Type 2.1 : _____ H/J (min: ___ , max: ___ )
+Type 2.2 : _____ H/J (min: ___ , max: ___ )
+Type 2.3 : _____ H/J (min: ___ , max: ___ )
+
+
+Facteurs de dérive les plus fréquents :
+----------------------------------------
+1. 
+2. 
+3. 
+4. 
+5. 
+
+
+Corrélations observées :
+------------------------
+[Ex. "Électricité instable → +30% effort en moyenne"]
+
+Observation 1 : 
+
+
+Observation 2 : 
+
+
+Observation 3 : 
+
+
+
+================================================================================
+
+PLAN DE COMPLÉTION
+================================================================================
+
+Si < 15 cas collectés, actions :
+--------------------------------
+□ Interviewer d'anciens étudiants
+□ Contacter des freelances locaux
+□ Documenter mes propres projets passés
+□ Rechercher des rapports de projets publics
+□ Simplifier la taxonomie (moins de types)
+
+Deadline : __________
+
+
+================================================================================
+
+VALIDATION :
+-----------
+□ Au moins 10 cas documentés (15+ idéal)
+□ Données réelles (pas inventées)
+□ Colonnes complètes pour calibration
+□ Analyse préliminaire effectuée
+□ Fichier Excel/CSV créé
+□ Je peux passer au Livrable 8
+
+Date de validation : __________
+Signature/Initiales : __________
+
+
+================================================================================
+NOTES / QUESTIONS À RÉSOUDRE :
+================================================================================

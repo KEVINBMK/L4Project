@@ -1,0 +1,219 @@
+================================================================================
+LIVRABLE 2 — CARTE DES UTILISATEURS & SCÉNARIOS (Jobs-to-be-done)
+================================================================================
+But : Définir EXACTEMENT le moment où l'estimation est utilisée
+Statut : ⨉ EN COURS  □ VALIDÉ
+
+================================================================================
+
+SCÉNARIO 1 : DÉCISION GO/NO-GO
+================================================================================
+
+Contexte :
+----------
+"Je dois estimer un projet X pour décider si on le lance."
+
+[Décrire le contexte précis]
+Une direction ou un bailleur demande si le projet est "faisable" dans les temps et le budget
+envisagés. La personne n'a pas encore le cahier des charges détaillé : elle doit trancher
+go / no-go (ou "go mais avec conditions") sans se tromper d'ordre de grandeur.
+
+Qui : Chef de projet ou responsable administratif (institution publique, service numérique
+      ou processus administratif).
+Quand : Avant engagement fort : allocation budgétaire, lancement formel, promesse à la
+        hiérarchie ou à un partenaire (souvent sous pression de délai).
+Où : Bureau, réunions avec la direction ; parfois échanges informels (téléphone, messagerie)
+     pour cadrer l'intention avant la décision formelle.
+Pourquoi cette décision est critique :
+Un mauvais "oui" lance un projet sous-estimé → dépassements, perte de crédibilité, tension
+avec le budget. Un mauvais "non" bloque un projet utile. L'estimation sert à arbitrer avec
+un ordre de grandeur réaliste (effort + durée + incertitude), pas à promettre la perfection.
+
+
+Entrée disponible (qu'est-ce qu'il sait vraiment ?) :
+-----------------------------------------------------
+✓ Intention métier : type de projet (numérique vs administratif), sous-type (site, app,
+  workflow d'attestation, etc.).
+✓ Ordre de taille : nombre d'écrans/pages ou d'étapes de processus, modules majeurs.
+✓ Contexte local connu : stabilité électricité / internet, délais de validation admin
+  (même si subjectif), taille et niveau d'expérience de l'équipe envisagée.
+✗ (ce qu'il ne sait PAS encore) : Spécifications fines, intégrations exactes, charge par
+  rôle au jour le jour, calendrier précis de toutes les validations futures.
+✗ Tous les risques imprévus (changement de priorité politique, indisponibilité d'un valideur).
+
+
+Sortie attendue (qu'est-ce qu'il veut voir ?) :
+-----------------------------------------------
+→ Effort en homme-jours et durée en semaines calendrier, avec intervalle bas / probable / haut.
+→ Planning par phases (même macro) pour visualiser l'enchaînement.
+→ Facteurs explicatifs : pourquoi ce chiffre (infra, validations, complexité métier) +
+  risques majeurs identifiables dès ce stade.
+
+
+Contraintes locales spécifiques :
+---------------------------------
+• Validation : délais admin imprévisibles (souvent 1 semaine à 1 mois) qui allongent la
+  durée calendrier sans augmenter l'effort "pur" du même facteur.
+• Coupures (électricité/internet) : réduisent la disponibilité réelle de l'équipe ; à refléter
+  dans la durée ou dans les hypothèses du modèle.
+• Mobilité/accessibilité : réunions sur site, déplacements ; parfois peu de temps continu
+  devant un poste stable.
+• Délai de décision : la hiérarchie attend souvent une réponse en peu de jours → l'outil doit
+  rester utilisable en moins de ~7 minutes (cf. charte).
+• Autre : budgets serrés, peu de marge pour "rattraper" une sous-estimation. 
+
+
+================================================================================
+
+SCÉNARIO 2 : PLANIFICATION & AFFECTATION
+================================================================================
+
+Contexte :
+----------
+"Je dois planifier les phases et affecter 2–5 personnes."
+
+[Décrire le contexte précis]
+Le projet est validé ou en passe de l'être. Il faut répartir le travail sur une petite équipe,
+définir un échéancier crédible et éviter de promettre une charge irréaliste par personne.
+
+Qui : Chef de projet (souvent aussi pivot avec le responsable administratif pour les jalons
+      de validation).
+Quand : Après le go (ou go conditionnel), avant le kick-off détaillé avec l'équipe ; parfois
+        en parallèle de la rédaction du cahier des charges.
+Où : Bureau, ateliers internes ; coordination par réunions courtes et canaux habituels.
+Pourquoi cette planification est critique :
+Sans une vision effort + durée + phases, on sur-alloue les mêmes personnes, on oublie les temps
+morts (validations, coupures) et les livraisons glissent dès le premier mois.
+
+
+Entrée disponible (qu'est-ce qu'il sait vraiment ?) :
+-----------------------------------------------------
+✓ Type et sous-type de projet, taille (écrans/étapes), nombre de modules, complexité métier.
+✓ Taille de l'équipe (2–5) et niveau d'expérience global.
+✓ Hypothèses locales déjà posées (électricité, validations admin) — cohérentes avec le scénario 1.
+✗ (ce qu'il ne sait PAS encore) : Dates exactes de chaque visa ; imprévus RH ; retards
+  fournisseurs / achats si le projet dépend de matériel externe.
+✗ Charge fine par tâche quotidienne (le MVP ne vise pas le suivi de chantier détaillé).
+
+
+Sortie attendue (qu'est-ce qu'il veut voir ?) :
+-----------------------------------------------
+→ Durée globale et effort global, avec intervalle de confiance (pour anticiper le pire cas).
+→ Découpage en phases (ex. cadrage, réalisation, recette, déploiement) avec ordre logique.
+→ Aide implicite au dimensionnement : "avec N personnes et ces contraintes, est-ce cohérent ?"
+  (lié aux sorties charte : effort, durée, planning, facteurs explicatifs).
+
+
+Contraintes locales spécifiques :
+---------------------------------
+• Disponibilité de l'équipe : temps partiel réel (réunions, urgences administratives) souvent
+  sous-estimé.
+• Compétences disponibles : profils junior vs senior changent la durée ; déjà reflété par une
+  entrée "niveau expérience" dans la charte.
+• Ressources matérielles : générateur, connexion de secours, salles — impact indirect sur le
+  rythme effectif.
+• Délais de procurement : achats matériel / licences peuvent ajouter des semaines calendrier.
+• Autre : multi-tâches et interruptions fréquentes en contexte institutionnel. 
+
+
+================================================================================
+
+SCÉNARIO 3 : JUSTIFICATION HIÉRARCHIQUE
+================================================================================
+
+Contexte :
+----------
+"Je dois justifier l'estimation devant un supérieur/commission."
+
+[Décrire le contexte précis]
+La hiérarchie ou une commission demande "pourquoi autant de temps / d'effort ?". Il faut
+défendre un chiffre crédible, pas seulement un avis personnel, en s'appuyant sur des facteurs
+visibles (contexte Kinshasa, complexité, validations).
+
+Qui : Chef de projet et/ou responsable administratif devant directeur de service, secrétaire
+      général, comité de validation budget, ou instance équivalente.
+Quand : Lors de la validation budgétaire, d'un comité de pilotage, ou avant signature d'un
+        engagement formel ; parfois après un premier dépassement pour recadrer.
+Où : Réunion formelle, ou transmission d'un mémo / note courte avec les éléments clés.
+Pourquoi cette justification est critique :
+Sans explication structurée, la direction compresse arbitrairement les délais ou le budget ;
+avec une justification (effort, intervalle, facteurs locaux), on négocie sur des bases
+partagées et on réduit les dépassements "surprise".
+
+
+Entrée disponible (qu'est-ce qu'il sait vraiment ?) :
+-----------------------------------------------------
+✓ Les mêmes entrées que pour les scénarios 1–2 (type, taille, complexité, équipe, facteurs
+  locaux) — déjà saisies ou aisément re-saisies pour produire une fiche de synthèse.
+✓ Le besoin de montrer un intervalle (bas / probable / haut) plutôt qu'un chiffre unique.
+✓ Les arguments métier : pourquoi le projet est sensible (nombre d'écrans, règles, intégrations).
+✗ (ce qu'il ne sait PAS encore) : Ce que la commission acceptera comme fourchette ; les
+  arbitrages politiques finaux.
+✗ L'historique complet des projets passés au sein de l'institution (sauf si collecté plus tard
+  pour le dataset — livrable 7).
+
+
+Sortie attendue (qu'est-ce qu'il veut voir ?) :
+-----------------------------------------------
+→ Synthèse lisible : effort, durée, intervalle de confiance, phases principales.
+→ Liste courte des facteurs explicatifs (infra, validations, complexité, taille équipe).
+→ Formulation des risques majeurs et de ce qui pourrait faire monter l'estimation (haut de
+  l'intervalle).
+
+
+Contraintes locales spécifiques :
+---------------------------------
+• Format de présentation requis : souvent 1–2 pages ou oral appuyé d'un schéma simple ; éviter
+  le jargon technique inutile.
+• Niveau de détail attendu : agrégé (pas du suivi jour par jour) ; chiffres + raisons, pas un
+  Gantt exhaustif dans le MVP.
+• Questions/objections anticipées : "Pourquoi si long ?", "On ne peut pas diviser par deux ?",
+  "Les autres institutions le font plus vite ?" → l'intervalle et les facteurs locaux y répondent.
+• Délai de réponse : court ; la fiche doit pouvoir être produite rapidement après saisie
+  (cohérent avec < 7 minutes en amont).
+• Autre : besoin de légitimité ("méthode" + transparence) plus que de précision illusoire. 
+
+
+================================================================================
+
+SYNTHÈSE DES INSIGHTS :
+================================================================================
+
+Patterns communs identifiés :
+------------------------------
+• Même utilisateur (chef de projet / resp. admin) enchaîne souvent les 3 moments : décision,
+  planification, justification.
+• Besoin constant d'un ordre de grandeur avec incertitude (intervalle), pas d'un chiffre unique
+  "magique".
+• Nécessité d'expliquer le "pourquoi" avec des facteurs locaux et métier, pas seulement afficher
+  un total.
+
+Besoins récurrents :
+--------------------
+• Rapidité : formulaire court, résultat exploitable en quelques minutes.
+• Crédibilité : phases + facteurs + intervalle pour parler à la hiérarchie.
+• Simplicité : pas d'outil lourd ; pas de promesse de budget comptable détaillé (hors scope MVP).
+
+Contraintes Kinshasa dominantes :
+---------------------------------
+• Délais de validation administrative longs et variables.
+• Instabilité électricité / internet impactant la durée calendrier et la charge réelle.
+• Petites équipes, interruptions fréquentes : disponibilité réelle inférieure à l'effectif nominal.
+
+
+================================================================================
+
+VALIDATION :
+-----------
+□ Les 3 scénarios sont détaillés et réalistes
+□ Les entrées/sorties sont clairement définies
+□ Les contraintes locales sont identifiées
+□ Je peux passer au Livrable 3
+
+Date de validation : __________
+Signature/Initiales : __________
+
+
+================================================================================
+NOTES / QUESTIONS À RÉSOUDRE :
+================================================================================

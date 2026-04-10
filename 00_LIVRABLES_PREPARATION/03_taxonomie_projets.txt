@@ -1,0 +1,218 @@
+================================================================================
+LIVRABLE 3 — TAXONOMIE DES PROJETS (Scope intelligent)
+================================================================================
+But : Ne pas "estimer tout". Tu classes pour mieux estimer.
+Statut : □ EN COURS  □ VALIDÉ
+
+RÈGLE : 2 familles max pour MVP
+Chaque famille → 3 types → Formulaire adapté
+
+================================================================================
+
+FAMILLE 1 : PROJETS NUMÉRIQUES
+================================================================================
+
+Description générale :
+----------------------
+[À REMPLIR]
+Périmètre : applications, sites web, systèmes d'information, intégrations
+
+
+
+
+Critères d'appartenance :
+-------------------------
+Un projet est "Numérique" si :
+• 
+• 
+• 
+
+
+TYPE 1.1 : ___________________________
+------------------------------------------
+Nom du type : 
+
+Description : 
+
+
+
+Exemples concrets (Kinshasa) :
+• 
+• 
+
+Métriques de taille spécifiques :
+• Nombre de : 
+• Nombre de : 
+• Nombre de : 
+
+
+TYPE 1.2 : ___________________________
+------------------------------------------
+Nom du type : 
+
+Description : 
+
+
+
+Exemples concrets (Kinshasa) :
+• 
+• 
+
+Métriques de taille spécifiques :
+• Nombre de : 
+• Nombre de : 
+• Nombre de : 
+
+
+TYPE 1.3 : ___________________________
+------------------------------------------
+Nom du type : 
+
+Description : 
+
+
+
+Exemples concrets (Kinshasa) :
+• 
+• 
+
+Métriques de taille spécifiques :
+• Nombre de : 
+• Nombre de : 
+• Nombre de : 
+
+
+================================================================================
+
+FAMILLE 2 : PROJETS ADMINISTRATIFS
+================================================================================
+
+Description générale :
+----------------------
+[À REMPLIR]
+Périmètre : digitalisation processus, workflow documents, guichets, archivage
+
+
+
+
+Critères d'appartenance :
+-------------------------
+Un projet est "Administratif" si :
+• 
+• 
+• 
+
+
+TYPE 2.1 : ___________________________
+------------------------------------------
+Nom du type : 
+
+Description : 
+
+
+
+Exemples concrets (Kinshasa) :
+• 
+• 
+
+Métriques de taille spécifiques :
+• Nombre de : 
+• Nombre de : 
+• Nombre de : 
+
+
+TYPE 2.2 : ___________________________
+------------------------------------------
+Nom du type : 
+
+Description : 
+
+
+
+Exemples concrets (Kinshasa) :
+• 
+• 
+
+Métriques de taille spécifiques :
+• Nombre de : 
+• Nombre de : 
+• Nombre de : 
+
+
+TYPE 2.3 : ___________________________
+------------------------------------------
+Nom du type : 
+
+Description : 
+
+
+
+Exemples concrets (Kinshasa) :
+• 
+• 
+
+Métriques de taille spécifiques :
+• Nombre de : 
+• Nombre de : 
+• Nombre de : 
+
+
+================================================================================
+
+MATRICE DE DÉCISION (Quel type choisir ?)
+================================================================================
+
+[Créer un arbre de décision simple]
+
+Question 1 : Le projet est-il principalement technologique ou processus ?
+→ Technologique → FAMILLE 1 (Numérique)
+→ Processus → FAMILLE 2 (Administratif)
+
+Si FAMILLE 1 :
+  Question 2 : 
+  → Réponse A → Type 1.1
+  → Réponse B → Type 1.2
+  → Réponse C → Type 1.3
+
+Si FAMILLE 2 :
+  Question 2 : 
+  → Réponse A → Type 2.1
+  → Réponse B → Type 2.2
+  → Réponse C → Type 2.3
+
+
+================================================================================
+
+CAS LIMITES & HYBRIDES
+================================================================================
+
+Que faire si un projet mélange numérique et administratif ?
+→ 
+
+
+Que faire si un projet ne rentre dans aucune catégorie ?
+→ 
+
+
+Règle de classification en cas de doute :
+→ 
+
+
+================================================================================
+
+VALIDATION :
+-----------
+□ 2 familles clairement définies
+□ 3 types par famille avec exemples concrets
+□ Métriques de taille identifiées pour chaque type
+□ Arbre de décision simple créé
+□ Cas limites adressés
+□ Je peux passer au Livrable 4
+
+Date de validation : __________
+Signature/Initiales : __________
+
+
+================================================================================
+NOTES / QUESTIONS À RÉSOUDRE :
+================================================================================

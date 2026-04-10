@@ -1,0 +1,47 @@
+================================================================================
+GUIDE D'EXÉCUTION - APPROCHE SENIOR
+================================================================================
+Date de création : 1 février 2026
+
+RÈGLE D'OR : Tu avances seulement si l'étape précédente est validée.
+
+ORDRE D'EXÉCUTION (CHECKLIST) :
+--------------------------------
+
+□ 1. Charte produit (1 page)                    → 01_charte_produit.txt
+□ 2. 3 scénarios utilisateurs                   → 02_scenarios_utilisateurs.txt
+□ 3. Taxonomie (2 familles max)                 → 03_taxonomie_projets.txt
+□ 4. Unités + capacité réelle                   → 04_unites_et_regles.txt
+□ 5. Facteurs Kinshasa (liste + échelles)       → 05_facteurs_kinshasa.txt
+□ 6. Formulaire 1 page                          → 06_formulaire_collecte.txt
+□ 7. Dataset 10–30 cas                          → 07_truth_dataset.txt
+□ 8. Modèle v0 papier                           → 08_modele_estimation_v0.txt
+□ 9. Planning par phases + scénarios            → 09_planification_phases.txt
+□ 10. Plan d'évaluation                         → 10_plan_evaluation.txt
+
+➡️ APRÈS SEULEMENT : architecture + base de données + code
+
+
+CE QUE TU DOIS REFUSER (éviter projet trop ambitieux) :
+--------------------------------------------------------
+✗ Prédire le budget exact (tu peux l'estimer plus tard)
+✗ IA/ML avancé dès le départ (commence paramétrique + calibration)
+✗ Gérer tous les types de projets existants (commence petit et extensible)
+✗ Promesse de précision absolue (tu fournis un intervalle + confiance)
+
+
+RAPPEL CONTEXTE PROJET :
+------------------------
+Sujet : Système intelligent d'estimation et planification de l'effort 
+        pour projets numériques et administratifs à Kinshasa
+
+Problème : Échec/retard de projets dus à mauvaise estimation
+Contexte : Kinshasa (contraintes infrastructure, validation, ressources)
+Niveau : Moyen (modèles connus, pas de techno complexe)
+
+
+PRINCIPE SENIOR :
+-----------------
+"Penser avant coder. Valider avant implémenter. Mesurer avant déployer."
+
+Chaque fichier doit être STABLE avant de passer au suivant.

@@ -1,0 +1,347 @@
+================================================================================
+LIVRABLE 5 — CATALOGUE DES FACTEURS "KINSHASA" (Explicable + Défendable)
+================================================================================
+But : Ton projet se distingue ici. Rendre le modèle crédible et contextuel.
+Statut : □ EN COURS  □ VALIDÉ
+
+RÈGLE SENIOR : Chaque facteur doit influencer un résultat et être justifiable.
+
+================================================================================
+
+CATÉGORIE 1 : INFRASTRUCTURE
+================================================================================
+
+FACTEUR 1.1 : ÉLECTRICITÉ
+--------------------------
+Échelle : 1-5 (1 = stable, 5 = très instable)
+
+Niveau 1 (Stable) :
+• Description : Coupures < 2h/semaine, générateur de secours
+• Impact sur effort : multiplicateur × 1.0
+• Impact sur durée : aucun
+
+Niveau 2 (Légèrement instable) :
+• Description : 
+• Impact sur effort : multiplicateur × _____
+• Impact sur durée : 
+
+Niveau 3 (Modérément instable) :
+• Description : 
+• Impact sur effort : multiplicateur × _____
+• Impact sur durée : 
+
+Niveau 4 (Instable) :
+• Description : 
+• Impact sur effort : multiplicateur × _____
+• Impact sur durée : 
+
+Niveau 5 (Très instable) :
+• Description : Coupures quotidiennes >6h, pas de secours
+• Impact sur effort : multiplicateur × _____
+• Impact sur durée : +_____ semaines de marge
+
+Justification de ce facteur :
+→ Pourquoi il impacte l'effort/durée ?
+
+
+
+
+FACTEUR 1.2 : INTERNET / CONNECTIVITÉ
+--------------------------------------
+Échelle : 1-5 (1 = stable, 5 = très instable)
+
+Niveau 1 : 
+• Description : 
+• Impact : 
+
+Niveau 2 : 
+• Description : 
+• Impact : 
+
+Niveau 3 : 
+• Description : 
+• Impact : 
+
+Niveau 4 : 
+• Description : 
+• Impact : 
+
+Niveau 5 : 
+• Description : 
+• Impact : 
+
+Justification :
+
+
+
+
+================================================================================
+
+CATÉGORIE 2 : ORGANISATION & VALIDATION
+================================================================================
+
+FACTEUR 2.1 : DÉLAIS DE SIGNATURE/VALIDATION
+---------------------------------------------
+Échelle : 1-5 (1 = rapide, 5 = très lent)
+
+Niveau 1 (< 2 jours) :
+• Description : 
+• Impact : 
+
+Niveau 2 (2-5 jours) :
+• Description : 
+• Impact : 
+
+Niveau 3 (1-2 semaines) :
+• Description : 
+• Impact : 
+
+Niveau 4 (2-4 semaines) :
+• Description : 
+• Impact : 
+
+Niveau 5 (> 1 mois) :
+• Description : 
+• Impact : 
+
+Justification :
+
+
+
+
+FACTEUR 2.2 : DISPONIBILITÉ DES DÉCIDEURS
+------------------------------------------
+Échelle : 1-5 (1 = haute, 5 = très faible)
+
+Niveau 1 : 
+• Description : 
+• Impact : 
+
+Niveau 2 : 
+• Description : 
+• Impact : 
+
+Niveau 3 : 
+• Description : 
+• Impact : 
+
+Niveau 4 : 
+• Description : 
+• Impact : 
+
+Niveau 5 : 
+• Description : 
+• Impact : 
+
+Justification :
+
+
+
+
+================================================================================
+
+CATÉGORIE 3 : LOGISTIQUE
+================================================================================
+
+FACTEUR 3.1 : MOBILITÉ / TRANSPORT
+-----------------------------------
+Échelle : 1-5 (1 = facile, 5 = très difficile)
+
+[Pertinent si le projet nécessite déplacements terrain]
+
+Niveau 1 : 
+• Description : 
+• Impact : 
+
+Niveau 2 : 
+• Description : 
+• Impact : 
+
+Niveau 3 : 
+• Description : 
+• Impact : 
+
+Niveau 4 : 
+• Description : 
+• Impact : 
+
+Niveau 5 : 
+• Description : 
+• Impact : 
+
+Justification :
+
+
+
+
+FACTEUR 3.2 : PROCUREMENT / MATÉRIEL
+-------------------------------------
+Échelle : 1-5 (1 = rapide, 5 = très lent)
+
+[Délais pour obtenir équipement, licences, etc.]
+
+Niveau 1 : 
+• Description : 
+• Impact : 
+
+Niveau 2 : 
+• Description : 
+• Impact : 
+
+Niveau 3 : 
+• Description : 
+• Impact : 
+
+Niveau 4 : 
+• Description : 
+• Impact : 
+
+Niveau 5 : 
+• Description : 
+• Impact : 
+
+Justification :
+
+
+
+
+================================================================================
+
+CATÉGORIE 4 : RESSOURCES HUMAINES
+================================================================================
+
+FACTEUR 4.1 : EXPÉRIENCE DE L'ÉQUIPE
+-------------------------------------
+Échelle : 1-5 (1 = senior, 5 = très junior)
+
+Niveau 1 (Senior) :
+• Description : >5 ans d'expérience, autonome
+• Impact : multiplicateur × 0.8 (gain d'efficacité)
+
+Niveau 2 : 
+• Description : 
+• Impact : 
+
+Niveau 3 : 
+• Description : 
+• Impact : 
+
+Niveau 4 : 
+• Description : 
+• Impact : 
+
+Niveau 5 (Très junior) :
+• Description : <1 an, nécessite encadrement constant
+• Impact : multiplicateur × 1.8
+
+Justification :
+
+
+
+
+FACTEUR 4.2 : TURNOVER / ABSENCES
+----------------------------------
+Échelle : 1-5 (1 = faible, 5 = élevé)
+
+Niveau 1 : 
+• Description : 
+• Impact : 
+
+Niveau 2 : 
+• Description : 
+• Impact : 
+
+Niveau 3 : 
+• Description : 
+• Impact : 
+
+Niveau 4 : 
+• Description : 
+• Impact : 
+
+Niveau 5 : 
+• Description : 
+• Impact : 
+
+Justification :
+
+
+
+
+================================================================================
+
+FACTEURS ADDITIONNELS (optionnels)
+================================================================================
+
+FACTEUR CUSTOM 1 : ___________________________
+----------------------------------------------
+Catégorie : 
+Échelle : 
+Impacts :
+
+
+Justification :
+
+
+
+
+FACTEUR CUSTOM 2 : ___________________________
+----------------------------------------------
+Catégorie : 
+Échelle : 
+Impacts :
+
+
+Justification :
+
+
+
+
+================================================================================
+
+MATRICE D'IMPACT GLOBALE
+================================================================================
+
+[Créer une vue consolidée]
+
+Facteur                          | Impact Effort | Impact Durée | Priorité
+---------------------------------|---------------|--------------|----------
+Électricité                      |               |              |
+Internet                         |               |              |
+Délais validation                |               |              |
+Disponibilité décideurs          |               |              |
+Mobilité                         |               |              |
+Procurement                      |               |              |
+Expérience équipe                |               |              |
+Turnover                         |               |              |
+
+
+Priorisation :
+--------------
+Facteurs CRITIQUES (toujours demander) :
+• 
+• 
+• 
+
+Facteurs SECONDAIRES (demander si pertinent) :
+• 
+• 
+
+
+================================================================================
+
+VALIDATION :
+-----------
+□ 6-10 facteurs définis avec échelles claires
+□ Impact quantifié (multiplicateurs) pour chaque niveau
+□ Justification solide pour chaque facteur
+□ Priorisation effectuée
+□ Je peux passer au Livrable 6
+
+Date de validation : __________
+Signature/Initiales : __________
+
+
+================================================================================
+NOTES / QUESTIONS À RÉSOUDRE :
+================================================================================

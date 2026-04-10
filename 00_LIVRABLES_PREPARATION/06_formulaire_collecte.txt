@@ -1,0 +1,309 @@
+================================================================================
+LIVRABLE 6 — FORMULAIRE DE COLLECTE (Entrée MVP)
+================================================================================
+But : Une estimation dépend d'entrées propres. Formulaire 1 page, < 7 minutes.
+Statut : □ EN COURS  □ VALIDÉ
+
+RÈGLE : Tu n'exiges jamais des données que personne n'a réellement.
+
+================================================================================
+
+SECTION 1 : IDENTIFICATION DU PROJET
+================================================================================
+
+Champ 1.1 : Nom du projet
+-------------------------
+Type : Texte libre
+Obligatoire : Oui
+Exemple : "Digitalisation des demandes d'attestations"
+
+
+Champ 1.2 : Famille de projet
+------------------------------
+Type : Choix unique
+Obligatoire : Oui
+Options :
+  ○ Projet Numérique
+  ○ Projet Administratif
+
+[Référence : Livrable 3 - Taxonomie]
+
+
+Champ 1.3 : Type de projet spécifique
+--------------------------------------
+Type : Choix unique (dépend de la famille)
+Obligatoire : Oui
+
+Si Numérique :
+  ○ [Type 1.1 défini au Livrable 3]
+  ○ [Type 1.2]
+  ○ [Type 1.3]
+
+Si Administratif :
+  ○ [Type 2.1 défini au Livrable 3]
+  ○ [Type 2.2]
+  ○ [Type 2.3]
+
+
+================================================================================
+
+SECTION 2 : TAILLE DU PROJET (Métriques adaptées au type)
+================================================================================
+
+[Les champs changent selon le type - définir pour chaque type]
+
+--- SI TYPE = [Type 1.1] ---
+
+Champ 2.1 : _____________________
+Type : 
+Obligatoire : 
+Aide : 
+
+Champ 2.2 : _____________________
+Type : 
+Obligatoire : 
+Aide : 
+
+Champ 2.3 : _____________________
+Type : 
+Obligatoire : 
+Aide : 
+
+
+--- SI TYPE = [Type 1.2] ---
+
+Champ 2.1 : _____________________
+Type : 
+Obligatoire : 
+Aide : 
+
+[...]
+
+
+--- SI TYPE = [etc.] ---
+
+[Définir pour les 6 types au total]
+
+
+================================================================================
+
+SECTION 3 : COMPLEXITÉ
+================================================================================
+
+Champ 3.1 : Complexité des règles métier
+-----------------------------------------
+Type : Échelle 1-5
+Obligatoire : Oui
+Labels :
+  1 = Très simple (logique basique)
+  2 = Simple
+  3 = Moyen (quelques conditions)
+  4 = Complexe (nombreuses règles)
+  5 = Très complexe (règles interdépendantes)
+
+
+Champ 3.2 : Exigences de sécurité
+----------------------------------
+Type : Choix unique
+Obligatoire : Oui
+Options :
+  ○ Basique (données publiques)
+  ○ Moyenne (authentification simple)
+  ○ Élevée (données sensibles, rôles multiples)
+
+
+Champ 3.3 : Fonctionnement offline requis ?
+--------------------------------------------
+Type : Oui/Non
+Obligatoire : Oui
+Si Oui → multiplicateur d'effort
+
+
+Champ 3.4 : Multi-sites / Multi-services ?
+-------------------------------------------
+Type : Nombre
+Obligatoire : Non
+Aide : Nombre de sites/services différents impliqués
+Impact : Coordination ++
+
+
+================================================================================
+
+SECTION 4 : ÉQUIPE
+================================================================================
+
+Champ 4.1 : Taille de l'équipe
+-------------------------------
+Type : Nombre (1-10)
+Obligatoire : Oui
+Aide : Nombre de personnes affectées au projet
+
+
+Champ 4.2 : Niveau d'expérience moyen
+--------------------------------------
+Type : Échelle 1-5
+Obligatoire : Oui
+Labels :
+  1 = Senior (>5 ans sur technologies similaires)
+  2 = Confirmé (3-5 ans)
+  3 = Intermédiaire (1-3 ans)
+  4 = Junior (<1 an)
+  5 = Débutant (formation requise)
+
+[Référence : Facteur 4.1 du Livrable 5]
+
+
+Champ 4.3 : Disponibilité moyenne
+----------------------------------
+Type : Échelle / Pourcentage
+Obligatoire : Oui
+Options :
+  ○ Dédiée (90%+)
+  ○ Partagée 2 projets (~60%)
+  ○ Partagée 3+ projets (~30%)
+
+[Référence : Livrable 4 - Disponibilité]
+
+
+================================================================================
+
+SECTION 5 : FACTEURS CONTEXTUELS KINSHASA
+================================================================================
+
+[Reprendre facteurs critiques du Livrable 5]
+
+Champ 5.1 : Stabilité électricité
+----------------------------------
+Type : Échelle 1-5
+Obligatoire : Oui
+Labels :
+  1 = Stable (< 2h coupure/semaine)
+  2 = Légèrement instable
+  3 = Modérément instable
+  4 = Instable
+  5 = Très instable (>6h/jour)
+
+
+Champ 5.2 : Qualité connectivité internet
+------------------------------------------
+Type : Échelle 1-5
+Obligatoire : Oui
+Labels :
+  [...]
+
+
+Champ 5.3 : Délais de validation administrative
+------------------------------------------------
+Type : Échelle 1-5
+Obligatoire : Oui
+Labels :
+  1 = Rapide (< 2 jours)
+  2 = Normal (2-5 jours)
+  3 = Lent (1-2 semaines)
+  4 = Très lent (2-4 semaines)
+  5 = Extrêmement lent (> 1 mois)
+
+
+Champ 5.4 : [Autre facteur critique]
+-------------------------------------
+Type : 
+Obligatoire : 
+Labels :
+
+
+Champ 5.5 : [Autre facteur critique]
+-------------------------------------
+Type : 
+Obligatoire : 
+Labels :
+
+
+================================================================================
+
+SECTION 6 : INFORMATIONS ADDITIONNELLES (Optionnel)
+================================================================================
+
+Champ 6.1 : Contraintes de délai
+---------------------------------
+Type : Texte libre
+Obligatoire : Non
+Aide : Y a-t-il une date butoir imposée ?
+
+
+Champ 6.2 : Risques identifiés
+-------------------------------
+Type : Texte libre (max 200 caractères)
+Obligatoire : Non
+Aide : Principaux risques connus à ce stade
+
+
+Champ 6.3 : Notes
+-----------------
+Type : Texte libre
+Obligatoire : Non
+
+
+================================================================================
+
+RÉSUMÉ DU FORMULAIRE
+================================================================================
+
+Nombre total de champs obligatoires : _____
+Nombre de champs optionnels : _____
+Temps de remplissage estimé : _____ minutes
+
+Validation règle des 7 minutes : □ OK  □ À réduire
+
+
+Données vraiment disponibles à ce stade ?
+------------------------------------------
+□ Oui, tous les champs sont réalistes
+□ Non, certains champs sont difficiles à obtenir :
+  - 
+  - 
+
+
+================================================================================
+
+MOCK-UP / WIREFRAME (optionnel)
+================================================================================
+
+[Dessiner un croquis simple du formulaire]
+
+┌────────────────────────────────────────┐
+│  ESTIMATION DE PROJET                  │
+├────────────────────────────────────────┤
+│                                        │
+│  [Section 1 : Identification]         │
+│                                        │
+│  [Section 2 : Taille]                 │
+│                                        │
+│  [Section 3 : Complexité]             │
+│                                        │
+│  [Section 4 : Équipe]                 │
+│                                        │
+│  [Section 5 : Facteurs Kinshasa]      │
+│                                        │
+│  [Section 6 : Infos additionnelles]   │
+│                                        │
+│         [ESTIMER LE PROJET]           │
+└────────────────────────────────────────┘
+
+
+================================================================================
+
+VALIDATION :
+-----------
+□ Formulaire tient sur 1 page (ou 1 écran)
+□ Temps de remplissage < 7 minutes
+□ Champs cohérents avec taxonomie et facteurs
+□ Pas de données impossibles à obtenir
+□ Je peux passer au Livrable 7
+
+Date de validation : __________
+Signature/Initiales : __________
+
+
+================================================================================
+NOTES / QUESTIONS À RÉSOUDRE :
+================================================================================

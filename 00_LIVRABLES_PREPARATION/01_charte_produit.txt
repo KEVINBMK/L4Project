@@ -1,0 +1,140 @@
+================================================================================
+LIVRABLE 1 — CHARTE PRODUIT (1 PAGE)
+================================================================================
+But : Empêcher le scope de exploser
+Statut : □ EN COURS  ⨉ VALIDÉ
+
+================================================================================
+
+PROBLÈME IDENTIFIÉ :
+-------------------
+[À REMPLIR]
+Ex. "Les projets numériques et administratifs à Kinshasa échouent ou accusent 
+des retards importants car l'effort et la durée sont systématiquement 
+sous-estimés, faute de prise en compte des contraintes locales."
+
+Votre formulation :
+
+"Les projets numériques et administratifs à Kinshasa connaissent des taux 
+d'échec et de retard élevés (>60% selon observations terrain) dus à une 
+sous-estimation systématique de l'effort et de la durée. Les causes principales 
+sont : (1) non-prise en compte des contraintes infrastructurelles locales 
+(coupures électricité, internet instable), (2) délais de validation administrative 
+imprévisibles (1 semaine à 1 mois), et (3) disponibilité réelle des équipes 
+surestimée (interruptions, multi-tâches)."
+
+
+
+
+================================================================================
+
+CIBLE PRINCIPALE (1 ou 2 maximum) :
+-----------------------------------
+[À REMPLIR]
+⨉ Chef de projet (institutions publiques)
+⨉ Responsable administratif
+□ Directeur de service numérique
+□ Autre : _____________________
+
+Justification du choix :
+
+Chef de projet et Responsable administratif car ce sont eux qui :
+- Doivent défendre les estimations devant leur hiérarchie avec arguments factuels
+- Subissent directement la pression des dépassements budgétaires et temporels
+- Prennent les décisions go/no-go avec budgets limités
+- Ont besoin d'outils simples et rapides (pas le temps pour analyses complexes)
+- Peuvent fournir les retours terrain pour améliorer le modèle 
+
+
+
+================================================================================
+
+DÉCISIONS QUE L'OUTIL AIDE À PRENDRE :
+--------------------------------------
+[À REMPLIR - Cocher les principales]
+⨉ Go / No-go (lancer ou non le projet)
+⨉ Dimensionnement équipe (combien de personnes ?)
+⨉ Échéancier réaliste (quand livrer ?)
+⨉ Identification des risques majeurs
+⨉ Allocation de ressources
+□ Autre : _____________________
+
+
+================================================================================
+
+ENTRÉES MINIMALES (5–10 champs max pour MVP) :
+----------------------------------------------
+[À REMPLIR - Liste simple]
+1. Type de projet (Numérique / Administratif)
+2. Sous-type spécifique (site web, app mobile, workflow attestation, etc.)
+3. Taille : nb écrans/pages OU nb étapes processus
+4. Nombre de modules/fonctionnalités majeures
+5. Complexité règles métier (échelle 1-5)
+6. Taille équipe (nb personnes)
+7. Niveau expérience équipe (Junior 1 → Senior 5)
+8. Stabilité électricité (échelle 1-5)
+9. Délais validation administrative (échelle 1-5)
+
+================================================================================
+
+SORTIES MINIMALES :
+------------------
+[À REMPLIR - Valider ce qui est vraiment nécessaire]
+⨉ Effort estimé (en homme-jours)
+⨉ Durée estimée (en semaines calendrier)
+⨉ Planning par phases
+⨉ Intervalle de confiance (bas / probable / haut) ← OBLIGATOIRE pour approche senior
+⨉ Facteurs explicatifs (pourquoi cette estimation ?)
+□ Autre : _____________________
+
+
+================================================================================
+
+NON-OBJECTIFS (À EXCLURE du MVP) :
+----------------------------------
+[À REMPLIR - Ce qu'on NE fait PAS]
+✗ facturation
+✗ suivi de chantier
+✗ IA avancée
+✗ gestion RH complète
+
+Exemples : budget détaillé, IA avancée, gestion RH complète, 
+suivi de chantier, facturation, etc.
+
+
+================================================================================
+
+CRITÈRES DE SUCCÈS :
+-------------------
+[À REMPLIR - Mesures objectives]
+
+Précision :
+⨉ Erreur médiane ≤ 30% (objectif réaliste pour contexte avec incertitudes)
+⨉ ET ≥ 70% des estimations réelles dans l'intervalle [bas, haut]
+
+Utilité :
+⨉ Satisfaction utilisateur : score ≥ 4/5
+⨉ Adoption : Test avec au moins 5-10 chefs de projet (retour positif)
+
+Autre :
+⨉ Temps de remplissage formulaire < 7 minutes
+
+
+
+
+================================================================================
+
+VALIDATION :
+-----------
+⨉ Cette charte est STABLE
+⨉ Tous les éléments sont remplis
+⨉ Les non-objectifs sont clairs
+⨉ Je peux passer au Livrable 2
+
+Date de validation : 01/02/2026
+Signature/Initiales : KEVIN / BMK
+
+
+================================================================================
+NOTES / QUESTIONS À RÉSOUDRE :
+================================================================================
